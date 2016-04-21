@@ -101,11 +101,11 @@ Response
  * 0 START_SYSEX                (0xF0)
  * 1 ENCODER_DATA               (0x61)
  * 2 first enc. #  & first enc. dir. 
- * 4 first enc. position, bits 0-6
- * 5 first enc. position, bits 7-13
- * 6 first enc. position, bits 14-20
- * 7 first enc. position, bits 21-27
- * 8 second enc. #  & second enc. dir. 
+ * 3 first enc. position, bits 0-6
+ * 4 first enc. position, bits 7-13
+ * 5 first enc. position, bits 14-20
+ * 6 first enc. position, bits 21-27
+ * 7 second enc. #  & second enc. dir. 
  * ...
  * N END_SYSEX                  (0xF7)
  * -----------------------------------------------------
@@ -150,11 +150,11 @@ Note : when reports are enabled, EncoderFirmata feature send the message below a
  * 0 START_SYSEX                (0xF0)
  * 1 ENCODER_DATA               (0x61)
  * 2 first enc. #  & first enc. dir.   [= (direction << 6) | (#)] 
- * 4 first enc. position, bits 0-6
- * 5 first enc. position, bits 7-13
- * 6 first enc. position, bits 14-20
- * 7 first enc. position, bits 21-27
- * 8 second enc. #  & second enc. dir. [= (direction << 6) | (#)]
+ * 3 first enc. position, bits 0-6
+ * 4 first enc. position, bits 7-13
+ * 5 first enc. position, bits 14-20
+ * 6 first enc. position, bits 21-27
+ * 7 second enc. #  & second enc. dir. [= (direction << 6) | (#)]
  * ...
  * N END_SYSEX                  (0xF7)
  * -----------------------------------------------------
